@@ -1,0 +1,61 @@
+<html>
+<head>
+<style type="text/css">
+body
+{
+background-image:url(https://th.bing.com/th/id/Rec072b41adf2602fe682da1d0f6ee7a0?rik=5tUsGiakkJ6RPQ&riu=http%3a%2f%2fcdn.wallpapersafari.com%2f28%2f98%2fnue7Wm.png&ehk=QDYY%2fToJegvpd1TcMRqmaCmeYBkHSmnyjafnAl8vKA4%3d&risl=&pid=ImgRaw);
+ background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+}
+p
+{
+font-size:50px;
+text-align:center;
+text-shadow: 2px 2px blue;
+color:#ffdb4d;
+}
+input[type=text] {
+   border: 2px solid ;
+  background-color:blue;
+  opacity:50%;
+    color:white;
+	font-family:bold;
+	font-size:60px;
+	width:300px;
+	height:70px;
+	position:relative;
+	left:300px;
+	bottom:-100px;
+}
+#butt{
+background-color:#00cccc;
+opacity:70%;
+	width:80px;
+	height:50px;
+	position:relative;
+	bottom:-200px;
+	right:-100px;
+}
+</style>
+</head>
+<body>
+<p id="para">How Many Fingers Am I Holding Up?</p>
+<input type="text" id="textIn">
+<button id="butt">Guess!!</button>
+<script type="text/javascript">
+document.getElementById("butt").onclick=function(){
+ var ingame= document.getElementById("textIn").value;
+  var rangame= Math.floor(Math.random()*11);
+    if(ingame==rangame)
+	{
+	alert("Got it!!");
+	}
+else
+{
+alert("Try again!! The number is:"+rangame);
+}
+}
+</script>
+</body>
+</html>
